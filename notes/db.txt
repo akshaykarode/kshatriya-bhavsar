@@ -1,0 +1,53 @@
+DB Structure
+
+@role_master
+		role_id role_name
+		0				Admin
+		1				User
+
+@users
+		user_id user_name email_id role_id
+
+@telephone
+		telephone_id user_id candidates_id
+
+@contact
+		contact_id user_id candidates_id
+		title address address_street_1 address_street_2 city state country zip 
+
+@social_contact_id
+		social_contact_id	user_id candidates_id
+		facebook instagram twitter gmail
+
+@images
+		user_id candidates_id	image_url biodata_url is_display_picture
+
+@candidates
+		candidates_id user_id
+		is_arranged	arranged_with
+
+@personal_details
+		personal_details_id user_id candidates_id
+		first_name middle_name last_name
+		date_of_birth place_of_birth time_of_birth 
+		height weight body_type is_disabled health_problem
+		marrital_status	about_myself
+		diet drink smoke
+
+@family_background
+		family_background_id user_id candidates_id
+		religion	community sub_community	mother_tongue gothra
+		fathers_details mothers_details family_location native_place
+		no_of_brothers no_of_sisters family_type family_affluence 
+
+@astro_details
+		astro_details_id user_id candidates_id
+		sun_sign	moon_sign	nakshatra	is_manglik
+
+@professional_details
+		professional_details_id user_id candidates_id
+		education_level	university	
+		company	designation	annual_income	
+
+@credentials
+		user_id	password
