@@ -4,10 +4,10 @@
     "domain":"http://api.mmtpl.io",
     "url": "https://www.my-planner.in",
     "db": {
-      "host"     : "my-planner.in",
+      "host"     : "localhost",
       "user"     : "root",
-      "password" : "moneymanager!@#$live%^&",
-      "database" : "fw_money_manager_developers_new",
+      "password" : "root",
+      "database" : "matrimony",
       "connectionLimit": 50,
       "useTransaction": {
         "connectionLimit": 1
