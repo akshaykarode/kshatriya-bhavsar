@@ -1,0 +1,15 @@
+<tr>
+<td class="column_cell font_default" align="center" valign="top" style="padding: 0px 16px 0;font-family: Helvetica, Arial, sans-serif;font-size: 15px;text-align: left;vertical-align: top;color: #888888;">
+  <p style="font-family: Helvetica, Arial, sans-serif;font-size: 15px;line-height: 23px;margin-top: 8px;margin-bottom: 8px;">
+  {% if nseRequest.extras.sip_via_purchase == false %}
+    A new SIP has been started by {{nseRequest.extras.advisor_name}}. Following are the details for your reference.
+  {% else %}
+    {% if nseRequest.data.umrn != "" %}
+      Since this SIP is being initiated on a new folio, the first SIP needs to be initiated via online purchase. Subsequent SIP installments will be initiated via debit mandate.
+    {% else %}
+      Since your debit mandate (for auto debit of SIP) is not registered yet, the first SIP needs to be initiated via online purchase. Subsequent SIP installments will be initiated via debit mandate once it is registered.
+    {% endif %}
+  {% endif%}
+  </p>
+</td>
+</tr>

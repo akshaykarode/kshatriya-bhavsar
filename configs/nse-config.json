@@ -1,0 +1,20 @@
+{
+	"LIVE":{
+		"masterListUrl":"https://www.nsenmf.com/NMFIIService/NMFService",
+		"transactionUrl":"https://www.nsenmf.com/NMFIITrxnService/NMFTrxnService",
+		"transactionExceptionUrl":"https://www.nsenmf.com/NMFII-ExceptionTrxnService/NMFIIExpTrxnService",
+		"holdingDetailsUrl":"https://www.nsenmf.com/NMFII-IINHoldingDetails/NMFIINHoldingDetails",
+		"transactionResponseRegx":"<NMFIISERVICES>(.*)</NMFIISERVICES>",
+		"masterResponseRegx":"<NewDataSet>(.*)</NewDataSet>"
+	},
+	"UAT":{
+		"masterListUrl":"http://124.124.236.198/NMFIIService/NMFService",
+		"transactionUrl":"http://124.124.236.198/NMFIITrxnService/NMFTrxnService",
+		"transactionExceptionUrl":"http://124.124.236.198/NMFII-ExceptionTrxnService/NMFIIExpTrxnService",
+		"holdingDetailsUrl":"http://124.124.236.198/NMFII-IINHoldingDetails/NMFIINHoldingDetails",
+		"transactionResponseRegx":"<NMFIISERVICES>(.*)</NMFIISERVICES>",
+		"masterResponseRegx":"<NewDataSet>(.*)</NewDataSet>"
+	},
+	"UATEnvironment":"http://124.124.236.198",
+	"LIVEEnvironment":"https://www.nsenmf.com"
+}

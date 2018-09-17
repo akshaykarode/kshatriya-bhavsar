@@ -1,0 +1,44 @@
+{
+  "production": {
+    "envName": "production",
+    "domain":"http://api.mmtpl.io",
+    "url": "https://www.my-planner.in",
+    "db": {
+      "host"     : "my-planner.in",
+      "user"     : "root",
+      "password" : "moneymanager!@#$live%^&",
+      "database" : "fw_money_manager_developers_new",
+      "connectionLimit": 50,
+      "useTransaction": {
+        "connectionLimit": 1
+      },
+      "useCursor": {
+        "connectionLimit": 1
+      }
+    },
+    "session":{
+      "cookie":{"secure":false,"maxAge":3600000}
+    }
+  },
+  "development": {
+    "envName": "development",
+    "domain":"http://localhost:5000",
+    "url": "http://localhost:8080/MoneyManager",
+    "db": {
+      "host"     : "localhost",
+      "user"     : "root",
+      "password" : "",
+      "database" : "matrimony",
+      "connectionLimit": 50,
+      "useTransaction": {
+        "connectionLimit": 1
+      },
+      "useCursor": {
+        "connectionLimit": 1
+      }
+    },
+    "session":{
+      "cookie":{"secure":false,"maxAge":3600000}
+    }
+  }
+}

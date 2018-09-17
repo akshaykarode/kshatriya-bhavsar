@@ -1,0 +1,15 @@
+{ 
+	"LIVE":{
+		"credentials":[
+	  	"BrokerCode=ARN-15348&Appln_Id=MFS15348&Password=JU7W0CP2",
+	  	"BrokerCode=INA300003616&Appln_Id=INA300003616&Password=EFH70F2I"
+	  ]
+	},
+	"UAT":{
+		"credentials":[
+	  	"BrokerCode=ARN-70209&Appln_Id=TEST007&Password=TEST$258",
+	  	"BrokerCode=RIA12345&Appln_Id=RIAUSER&Password=TEST$258"
+	  ]
+	}
+  
+}
