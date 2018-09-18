@@ -16,56 +16,12 @@ local.properties
 .recommenders
 .npm-debug.log
 
-# Eclipse Core
-.project
 
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
-
-# CDT-specific (C/C++ Development Tooling)
-.cproject
-
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-
-# Java annotation processor (APT)
-.factorypath
-
-# PDT-specific (PHP Development Tools)
-.buildpath
-
-# sbteclipse plugin
-.target
-
-# Tern plugin
-.tern-project
-
-# TeXlipse plugin
-.texlipse
-
-# STS (Spring Tool Suite)
-.springBeans
-
-# Code Recommenders
-.recommenders/
-
-# for source
-src/
-target/
-
-# for gzip tool
-babelify.js
-uglify.js
-builder.js
-BUILD/
+# NodeJS
 node_modules/
+
+# AngularJS
+public/dist/
+public/node_modules/
 gulpfile.js
-gruntfile.js
-gulp-task/
-grunt-task/
+package-lock.json
