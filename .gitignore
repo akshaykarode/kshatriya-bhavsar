@@ -15,7 +15,7 @@ local.properties
 .loadpath
 .recommenders
 .npm-debug.log
-
+.DS_Store
 
 # NodeJS
 node_modules/

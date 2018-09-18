@@ -1,1 +1,7 @@
 https://startangular.com/product/sb-admin-angular-theme/
+
+gulp
+https://css-tricks.com/gulp-for-beginners/
+
+paper theme
+https://demos.creative-tim.com/paper-dashboard-angular/dashboard
