@@ -27,20 +27,23 @@
   <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 
   <!--build:js js/main.min.js -->
-  <script src="js/lib/a-library.js"></script>
-  <script src="js/lib/another-library.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./js/scripts/angular.js"></script>
+  <script src="./js/scripts/angular-route.js"></script>
+  <script src="./js/scripts/angular-resource.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/directives/sidebarCmp.js"></script>
+  <script src="./js/controllers/appCtrl.js"></script>
   <!-- endbuild -->
 
 </head>
 
-<body>
-  <h1>Paper Dashboard Angular with Gulp</h1>
+<body ng-app="reshimgathi">
   <!-- <app-root>
     <div class="loader-container">
       <div class="loader"></div>
     </div>
   </app-root> -->
+  <ng-view></ng-view>
 </body>
 
 </html>

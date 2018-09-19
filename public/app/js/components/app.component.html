@@ -1,0 +1,26 @@
+<!-- App Component <app-component> -->
+<div class="wrapper">
+  {{appName}}
+  <div class="sidebar" data-background-color="white" data-active-color="danger">
+    <!-- Sidebar Component <sidebar-cmp> -->
+    <sidebar-cmp></sidebar-cmp>
+    <!-- Sidebar Component </sidebar-cmp> -->
+  </div>
+  <div class="main-panel">
+    <!-- Navbar Component <navbar-cmp> -->
+    <navbar-cmp></navbar-cmp>
+    <!-- Navbar Component </navbar-cmp> -->
+    <div class="content">
+      <!-- Router Outlet <router-outlet> -->
+      <router-outlet></router-outlet>
+      <!-- Router Outlet </router-outlet> -->
+    </div>
+    <!-- Footer Component <footer-cmp> -->
+    <footer-cmp></footer-cmp>
+    <!-- Footer Component </footer-cmp> -->
+  </div>
+</div>
+<!-- Fixedplugin Component <fixedplugin-cmp> -->
+<fixedplugin-cmp></fixedplugin-cmp>
+<!-- Fixedplugin Component </fixedplugin-cmp> -->
+<!-- App Component End </app-component> -->
