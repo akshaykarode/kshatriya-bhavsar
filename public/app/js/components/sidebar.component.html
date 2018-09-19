@@ -9,13 +9,13 @@
         </a>
     </div>
     <ul class="nav">
-            <li ng-if="isNotMobileMenu()">
+            <li >
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <i class="ti-panel"></i>
 					<p>Stats</p>
                 </a>
             </li>
-            <li class="dropdown" ng-if="isNotMobileMenu()">
+            <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="ti-bell"></i>
                         <p class="notification">5</p>
@@ -30,13 +30,13 @@
                     <li><a href="#">Another notification</a></li>
                   </ul>
             </li>
-            <li ng-if="isNotMobileMenu()">
+            <li >
                 <a href="#">
 					<i class="ti-settings"></i>
 					<p>Settings</p>
                 </a>
             </li>
-            <li class="divider" ng-if="isNotMobileMenu()"></li>
+            <li class="divider" ></li>
         <li ng-repeat="menuItem in menuItems" routerLinkActive="active" class="{{menuItem.class}}">
             <a [routerLink]="[menuItem.path]">
                 <i class="{{menuItem.icon}}"></i>
