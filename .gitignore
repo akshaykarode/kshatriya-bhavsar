@@ -23,5 +23,4 @@ node_modules/
 # AngularJS
 public/dist/
 public/node_modules/
-gulpfile.js
 package-lock.json
