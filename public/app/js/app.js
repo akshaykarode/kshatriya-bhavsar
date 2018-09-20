@@ -4,7 +4,7 @@ angular.module('reshimgathi', [
 	'ngResource',
 	'ui.router'
 	])
-	.config(['$stateProvider',function ($stateProvider) {
+	.config(['$stateProvider','$urlRouterProvider',function ($stateProvider, $urlRouterProvider) {
 		'use strict';
 
 		$stateProvider
@@ -33,5 +33,12 @@ angular.module('reshimgathi', [
       template: '<h3>All</h3>',
       controller: 'allCtrl',
     })
+    .state({
+    	name:"404",
+      url:'/404',
+      template: '<h3>404</h3>'
+    })
+
+    $urlRouterProvider.otherwise('/404');
 
 	}]);
