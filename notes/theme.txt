@@ -4,4 +4,4 @@ gulp
 https://css-tricks.com/gulp-for-beginners/
 
 paper theme
-https://demos.creative-tim.com/paper-dashboard-angular/dashboard
+https://demos.creative-tim.com/paper-dashboard-pro-angular/components/buttons
