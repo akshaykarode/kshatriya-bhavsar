@@ -30,7 +30,7 @@ angular.module('reshimgathi', [
     .state({
     	name:"app.all",
       url:'/all',
-      template: '<h3>All</h3>',
+      templateUrl: './js/views/all.html',
       controller: 'allCtrl',
     })
     .state({
@@ -39,6 +39,6 @@ angular.module('reshimgathi', [
       template: '<h3>404</h3>'
     })
 
-    $urlRouterProvider.otherwise('/404');
+    $urlRouterProvider.otherwise('/');
 
 	}]);
