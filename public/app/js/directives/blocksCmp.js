@@ -3,7 +3,7 @@ angular.module('reshimgathi')
     return {
       restrict: "EA",
       scope: false,
-      templateUrl: './js/components/sidebar.component.html',
+      templateUrl: './js/views/components/sidebar.component.html',
       link: function(scope, el, attrs){
     	}
     };
@@ -12,7 +12,7 @@ angular.module('reshimgathi')
     return {
       restrict: "EA",
       scope: false,
-      templateUrl: './js/components/navbar.component.html',
+      templateUrl: './js/views/components/navbar.component.html',
       link: function(scope, el, attrs){
     	}
     };
@@ -21,7 +21,7 @@ angular.module('reshimgathi')
     return {
       restrict: "EA",
       scope: false,
-      templateUrl: './js/components/footer.component.html',
+      templateUrl: './js/views/components/footer.component.html',
       link: function(scope, el, attrs){
     	}
     };

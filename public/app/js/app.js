@@ -1,22 +1,37 @@
-/*global angular */
 
-/**
- * The main TodoMVC app module
- *
- * @type {angular.Module}
- */
-angular.module('reshimgathi', ['ngRoute', 'ngResource'])
-	.config(function ($routeProvider) {
+angular.module('reshimgathi', [
+	'ngRoute', 
+	'ngResource',
+	'ui.router'
+	])
+	.config(['$stateProvider',function ($stateProvider) {
 		'use strict';
 
-		var routeConfig = {
-			controller: 'AppCtrl',
-			templateUrl: './js/components/app.component.html'
-		};
+		$stateProvider
+    .state({
+    	name:"home",
+      url:'/',
+      templateUrl: './js/views/home.html',
+      controller: 'homeCtrl',
 
-		$routeProvider
-			.when('/', routeConfig)
-			.otherwise({
-				redirectTo: '/'
-			});
-	});
+    })
+    .state({
+    	name:"signup",
+      url:'/signup',
+      templateUrl: './js/views/signup.html',
+      controller: 'signUpCtrl',
+    })
+    .state({
+    	name:"app",
+      url:'/app',
+      templateUrl: './js/views/components/app.component.html',
+      controller: 'appCtrl',
+    })
+    .state({
+    	name:"app.all",
+      url:'/all',
+      template: '<h3>All</h3>',
+      controller: 'allCtrl',
+    })
+
+	}]);

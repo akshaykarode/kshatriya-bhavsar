@@ -6,7 +6,7 @@
  * - exposes the model to the template and provides event handlers
  */
 angular.module('reshimgathi')
-	.controller('appCtrl', function appCtrl($scope, $routeParams, $filter) {
+	.controller('allCtrl', function allCtrl($scope, $routeParams, $filter) {
 		'use strict';
-		$scope.appName = 'Reshimgathi';
+		console.log("allCtrl")
 	});
