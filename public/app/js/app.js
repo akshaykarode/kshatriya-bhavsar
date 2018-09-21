@@ -23,13 +23,12 @@ angular.module('reshimgathi', [
     })
     .state({
     	name:"app",
-      url:'/app',
       templateUrl: './js/views/components/app.component.html',
       controller: 'appCtrl',
     })
     .state({
     	name:"app.all",
-      url:'/all',
+      url:'/app',
       templateUrl: './js/views/all.html',
       controller: 'allCtrl',
     })
