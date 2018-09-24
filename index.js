@@ -4,6 +4,7 @@ var express = require("express"),
     fs = require('fs'),
     swig = require('swig'),
     bodyParser = require('body-parser'),
+    session = require('express-session'),
     errorHandler = require('errorhandler'),
     methodOverride = require('method-override');
 

@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2018 at 06:56 PM
--- Server version: 5.7.20-0ubuntu0.16.04.1-log
--- PHP Version: 7.0.22-0ubuntu0.16.04.1
+-- Generation Time: Sep 24, 2018 at 08:09 PM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +21,22 @@ SET time_zone = "+00:00";
 --
 -- Database: `matrimony`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `astro_details`
+--
+
+CREATE TABLE `astro_details` (
+  `astro_details_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `candidates_id` int(11) NOT NULL,
+  `sun_sign` varchar(20) NOT NULL,
+  `moon_sign` varchar(20) NOT NULL,
+  `nakshatra` varchar(20) NOT NULL,
+  `is_manglik` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -67,6 +85,31 @@ CREATE TABLE `credentials` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `family_background`
+--
+
+CREATE TABLE `family_background` (
+  `family_background_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `candidates_id` int(11) NOT NULL,
+  `religion` varchar(20) NOT NULL,
+  `community` varchar(20) NOT NULL,
+  `sub_community` varchar(40) NOT NULL,
+  `mother_tongue` varchar(20) NOT NULL,
+  `gothra` varchar(40) NOT NULL,
+  `fathers_details` varchar(100) NOT NULL,
+  `mothers_details` varchar(100) NOT NULL,
+  `family_location` varchar(20) NOT NULL,
+  `native_place` varchar(20) NOT NULL,
+  `no_of_brothers` int(2) NOT NULL,
+  `no_of_sisters` int(2) NOT NULL,
+  `family_type` varchar(20) NOT NULL,
+  `family_affluence` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `images`
 --
 
@@ -103,6 +146,23 @@ CREATE TABLE `personal_details` (
   `diet` varchar(20) NOT NULL,
   `drink` varchar(20) NOT NULL,
   `smoke` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `professional_details`
+--
+
+CREATE TABLE `professional_details` (
+  `professional_details_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `candidates_id` int(11) NOT NULL,
+  `education_level` varchar(100) NOT NULL,
+  `university` varchar(40) NOT NULL,
+  `company` varchar(100) NOT NULL,
+  `designation` varchar(100) NOT NULL,
+  `annual_income` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -162,6 +222,12 @@ CREATE TABLE `users` (
 --
 
 --
+-- Indexes for table `astro_details`
+--
+ALTER TABLE `astro_details`
+  ADD PRIMARY KEY (`astro_details_id`);
+
+--
 -- Indexes for table `candidates`
 --
 ALTER TABLE `candidates`
@@ -174,10 +240,22 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`contact_id`);
 
 --
+-- Indexes for table `family_background`
+--
+ALTER TABLE `family_background`
+  ADD PRIMARY KEY (`family_background_id`);
+
+--
 -- Indexes for table `personal_details`
 --
 ALTER TABLE `personal_details`
   ADD PRIMARY KEY (`personal_details_id`);
+
+--
+-- Indexes for table `professional_details`
+--
+ALTER TABLE `professional_details`
+  ADD PRIMARY KEY (`professional_details_id`);
 
 --
 -- Indexes for table `role_master`
@@ -211,40 +289,60 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `astro_details`
+--
+ALTER TABLE `astro_details`
+  MODIFY `astro_details_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `candidates`
 --
 ALTER TABLE `candidates`
   MODIFY `candidates_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
   MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `personal_details`
 --
 ALTER TABLE `personal_details`
   MODIFY `personal_details_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `professional_details`
+--
+ALTER TABLE `professional_details`
+  MODIFY `professional_details_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `role_master`
 --
 ALTER TABLE `role_master`
   MODIFY `role_id` int(2) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `social_contact_id`
 --
 ALTER TABLE `social_contact_id`
   MODIFY `social_contact_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `telephone`
 --
 ALTER TABLE `telephone`
   MODIFY `telephone_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
