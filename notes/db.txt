@@ -8,6 +8,13 @@ DB Structure
 @users
 		user_id user_name email_id role_id
 
+@candidates
+		candidates_id user_id
+		is_arranged	arranged_with
+
+@credentials
+		user_id	password
+
 @telephone
 		telephone_id user_id candidates_id
 
@@ -22,14 +29,10 @@ DB Structure
 @images
 		user_id candidates_id	image_url biodata_url is_display_picture
 
-@candidates
-		candidates_id user_id
-		is_arranged	arranged_with
-
 @personal_details
 		personal_details_id user_id candidates_id
 		first_name middle_name last_name
-		date_of_birth place_of_birth time_of_birth 
+		date_of_birth place_of_birth 
 		height weight body_type is_disabled health_problem
 		marrital_status	about_myself
 		diet drink smoke
@@ -49,5 +52,3 @@ DB Structure
 		education_level	university	
 		company	designation	annual_income	
 
-@credentials
-		user_id	password

@@ -1,0 +1,46 @@
+MYSQL Master-Master Replication
+(url : https://www.digitalocean.com/community/tutorials/how-to-configure-mysql-group-replication-on-ubuntu-16-04)
+
+Local Server : 
+akshay.ddns.net
+27.4.53.205
+Expires in 29 days
+Sep 24, 2018
+04:06 PDT 	
+
+UUID : c71bc7f6-5c5a-4733-8b5f-beac60e0e3ff
+
+Edit : sudo nano /etc/mysql/my.cnf
+
+Add following : 
+
+# General replication settings
+gtid_mode = ON
+enforce_gtid_consistency = ON
+master_info_repository = TABLE
+relay_log_info_repository = TABLE
+binlog_checksum = NONE
+log_slave_updates = ON
+log_bin = binlog
+binlog_format = ROW
+transaction_write_set_extraction = XXHASH64
+loose-group_replication_bootstrap_group = OFF
+loose-group_replication_start_on_boot = OFF
+loose-group_replication_ssl_mode = REQUIRED
+loose-group_replication_recovery_use_ssl = 1
+
+# Shared replication group configuration
+loose-group_replication_group_name = "c71bc7f6-5c5a-4733-8b5f-beac60e0e3ff"
+loose-group_replication_ip_whitelist = "18.223.50.200,27.4.53.205"
+loose-group_replication_group_seeds = "18.223.50.200:33061,27.4.53.205:33061"
+
+# Single or Multi-primary mode? Uncomment these two lines
+# for multi-primary mode, where any host can accept writes
+loose-group_replication_single_primary_mode = OFF
+loose-group_replication_enforce_update_everywhere_checks = ON
+
+# Host specific replication configuration
+server_id = 1
+bind-address = "127.0.0.1"
+report_host = "127.0.0.1"
+loose-group_replication_local_address = "127.0.0.1:33061"
