@@ -1,3 +1,6 @@
 .dropdown-menu{
 	margin-top: 10px !important;
 }
+.off-canvas-sidebar .sidebar-wrapper, .sidebar .sidebar-wrapper{
+	overflow:hidden;
+}

@@ -33,6 +33,24 @@ angular.module('reshimgathi', [
       controller: 'allCtrl',
     })
     .state({
+      name:"app.matches",
+      url:'/matches',
+      templateUrl: './js/views/matches.html',
+      controller: 'matchesCtrl',
+    })
+    .state({
+      name:"app.profiles",
+      url:'/profiles',
+      templateUrl: './js/views/profiles.html',
+      controller: 'profilesCtrl',
+    })
+    .state({
+      name:"app.shortlisted",
+      url:'/shortlisted',
+      templateUrl: './js/views/shortlisted.html',
+      controller: 'shortlistedCtrl',
+    })
+    .state({
     	name:"404",
       url:'/404',
       template: '<h3>404</h3>'
