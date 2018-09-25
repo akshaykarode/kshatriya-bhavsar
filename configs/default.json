@@ -27,7 +27,7 @@
     "db": {
       "host"     : "localhost",
       "user"     : "root",
-      "password" : "",
+      "password" : "root",
       "database" : "matrimony",
       "connectionLimit": 50,
       "useTransaction": {

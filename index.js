@@ -48,6 +48,12 @@ app.use(errorHandler({
   dumpExceptions: true,
   showStack: true
 }));
+app.use(session({
+  secret: '63047706-999e-4e55-91cd-a0c68ad2fa82',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { maxAge: 12*60*60000 }
+}));
 app.use(express.static(publicDir));
 
 /* --------  App Configs Ends --------  */

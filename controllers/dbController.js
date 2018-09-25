@@ -3,9 +3,9 @@ var Q = require('q'),
 		forEach = require('async-foreach').forEach,
 		Helpers = require('./../modules/helpers')
 
-var nseApi = require('./../modules/nse-api');
-var dataHandler = nseApi.JSONXMLHandler
-var _NSE_Transaction = new nseApi.Transaction(nse_env);
+// var nseApi = require('./../modules/nse-api');
+// var dataHandler = nseApi.JSONXMLHandler
+// var _NSE_Transaction = new nseApi.Transaction(nse_env);
 
 exports.mapIIN = function(req, res, next) {
 	// check header or url parameters or post parameters for token
