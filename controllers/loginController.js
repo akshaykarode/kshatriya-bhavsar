@@ -29,7 +29,11 @@ exports.login = function(req, res , next) {
 
 exports.status = function(req, res ,next) {
  	console.log('status')
-  res.send('Environment : '+config.envName+' User : ' + JSON.stringify(req.session.user) + " : logged in.");
+  // res.send('Environment : '+config.envName+' User : ' + JSON.stringify(req.session.user) + " : logged in.");
+  MODELS.RoleMaster.findAll().then(roles => {
+    // console.log(roles)
+    res.send(roles)
+  })
 };
 
 exports.logout = function(req, res , next) {

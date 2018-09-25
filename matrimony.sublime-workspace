@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"st",
+				"styles"
+			],
+			[
+				"for",
+				"form-control"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
 				"d",
 				"default"
 			],
@@ -28,48 +44,36 @@
 	"buffers":
 	[
 		{
-			"file": "public/app/js/components/app.component.html",
-			"settings":
-			{
-				"buffer_size": 763,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "public/app/index.html",
 			"settings":
 			{
-				"buffer_size": 1651,
+				"buffer_size": 2855,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/app/js/directives/blocksCmp.js",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 662,
+				"buffer_size": 952,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "/*global angular */\n\n/**\n * The main TodoMVC app module\n *\n * @type {angular.Module}\n */\nangular.module('reshimgathi', ['ngRoute', 'ngResource'])\n\t.config(function ($routeProvider) {\n\t\t'use strict';\n\n\t\t$routeProvider\n\t\t\t.when('/', {\n\t\t\t\tcontroller: 'AppCtrl',\n\t\t\t\ttemplateUrl: './js/components/app.component.html'\n\t\t\t})\n\t\t\t.otherwise({\n\t\t\t\tredirectTo: '/'\n\t\t\t});\n\t});\n",
-			"file": "public/app/js/app.js",
-			"file_size": 399,
-			"file_write_time": 131818493180000000,
+			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 368,
+				"buffer_size": 1844,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/app/js/components/dashboard.component.html",
+			"file": "notes/db.txt",
 			"settings":
 			{
-				"buffer_size": 7576,
+				"buffer_size": 1270,
 				"line_ending": "Unix"
 			}
 		}
@@ -110,28 +114,42 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/akshay/Desktop/WebContent/WebContent",
-		"/Users/akshay/Desktop/WebContent/WebContent/js"
+		"/Users/akshay/Desktop/kshatriya-bhavsar",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/modules"
 	],
 	"file_history":
 	[
+		"/Users/akshay/Desktop/kshatriya-bhavsar/index.js",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/modules/routes.js",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/app.js",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/views/all.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/views/components/sidebar.component.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/views/components/navbar.component.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/views/components/footer.component.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/scripts/main.js",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/directives/blocksCmp.js",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/gulpfile.js",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/css/main.css",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/css/styles.css",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/views/home.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/notes/theme.txt",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/css/paper-dashboard-pro.min.css",
+		"/Users/akshay/Desktop/WebContent/WebContent/tpl/page_signin.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/dashboard.component.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/app.component.html",
 		"/Users/akshay/Desktop/WebContent/WebContent/index.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/fixedplugin.component.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/footer.component.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/index.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/navbar.component.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/sidebar.component.html",
-		"/Users/akshay/Desktop/kshatriya-bhavsar/public/gulpfile.js",
-		"/Users/akshay/Desktop/kshatriya-bhavsar/index.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/.gitignore",
 		"/Users/akshay/Downloads/paper-dashboard-angular-html-v1.0.1/src/main.ts",
 		"/Users/akshay/Downloads/paper-dashboard-angular-html-v1.0.1/src/index.html",
-		"/Users/akshay/Desktop/kshatriya-bhavsar/notes/theme.txt",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/dist/index.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/views/index.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/modules/db/connection.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/modules/db/index.js",
-		"/Users/akshay/Desktop/kshatriya-bhavsar/modules/routes.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/configs/default.json",
 		"/Users/akshay/Desktop/transaction-platform/deploy.py",
 		"/Users/akshay/Desktop/transaction-platform/index.js",
@@ -182,6 +200,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"class=\"active\"",
+			"dropdown-toggle",
+			"bootstrap",
+			"bootstrap.min.js",
+			"ull-page:after{position:absolute;z",
+			"full-page",
+			"ng-mode",
+			"style=\"margin: 55px 0 0 145px;position: absolute;color: green;\">Redirecting...</h3>",
+			"style",
 			"ng-if",
 			"ng-if=\"isNotMobileMenu()\""
 		],
@@ -210,55 +237,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/app/js/components/app.component.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 763,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								652,
-								652
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "public/app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1651,
+						"buffer_size": 2855,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1611,
-								1611
+								1199,
+								1199
 							]
 						],
 						"settings":
@@ -267,68 +263,6 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 308.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/app/js/directives/blocksCmp.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 662,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								662,
-								662
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/app/js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 368,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								232,
-								232
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -338,12 +272,43 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "public/app/js/components/dashboard.component.html",
+					"buffer": 1,
+					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7576,
+						"buffer_size": 952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								896,
+								896
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1844,
 						"regions":
 						{
 						},
@@ -357,9 +322,39 @@
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "notes/db.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -406,6 +401,10 @@
 	{
 		"height": 0.0
 	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
 	"output.unsaved_changes":
 	{
 		"height": 126.0
@@ -423,6 +422,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"page_sin",
+				"WebContent/tpl/page_signin.html"
+			],
+			[
+				"page_si",
+				"WebContent/tpl/page_signin.html"
+			],
 			[
 				"mfca",
 				"WebContent/js/controllers/MultiAssetView/MutualFunds/mfCapitalGainCtrl.js"

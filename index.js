@@ -12,14 +12,15 @@ var hostname = process.env.HOSTNAME || 'localhost',
     publicDir = __dirname + '/public',
     _config = require('./configs/default.json');
 
-var DB = require('./modules/db')
+// var DB = require('./modules/db')
 // var DB_CONSOLE = require('./modules/db/db-console.js')
 // Global
 _ = require('underscore')
 config = _config[process.argv[2]] || _config['development'];
-nse_env = process.argv[3] || "LIVE";
+MODELS = require('./models')
+// nse_env = process.argv[3] || "LIVE";
 app.locals.env=config;
-db = new DB(config.db)
+// db = new DB(config.db)
 // db_console = new DB_CONSOLE(config.db)
 // Global Ends
 
