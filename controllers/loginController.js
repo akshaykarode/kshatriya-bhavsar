@@ -30,9 +30,19 @@ exports.login = function(req, res , next) {
 exports.status = function(req, res ,next) {
  	console.log('status')
   // res.send('Environment : '+config.envName+' User : ' + JSON.stringify(req.session.user) + " : logged in.");
-  MODELS.RoleMaster.findAll().then(roles => {
-    // console.log(roles)
-    res.send(roles)
+  // MODELS.RoleMaster.findAll().then(roles => {
+  //   console.log('roles',roles)
+  //   res.send(roles)
+  // })
+  MODELS.Users.findAll({
+      include: [
+        {
+          model: MODELS.RoleMaster
+        }
+      ]
+    }).then(users => {
+    console.log('users',users)
+    res.send(users)
   })
 };
 
