@@ -25,12 +25,13 @@
     "method-override": "^1.0.0",
     "moment": "2.22.0",
     "mysql": "2.11.1",
+    "mysql2": "^1.6.1",
     "nodemailer": "2.5.0",
     "q": "^1.4.1",
     "request": "2.73.0",
+    "sequelize": "^4.39.0",
     "swig": "^1.4.2",
-    "underscore": "1.8.3",
-    "sequelize": "^4.39.0"
+    "underscore": "1.8.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1"

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"be",
+				"belongsTo"
+			],
+			[
+				"role",
+				"RoleMaster"
+			],
+			[
 				"se",
 				"sequelize"
 			],
@@ -52,10 +60,10 @@
 	"buffers":
 	[
 		{
-			"file": "public/app/index.html",
+			"file": "models/index.js",
 			"settings":
 			{
-				"buffer_size": 2855,
+				"buffer_size": 2618,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -64,26 +72,15 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 1060,
-				"encoding": "UTF-8",
+				"buffer_size": 977,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.js",
+			"file": "notes/db.txt",
 			"settings":
 			{
-				"buffer_size": 2033,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/index.js",
-			"settings":
-			{
-				"buffer_size": 1526,
-				"encoding": "UTF-8",
+				"buffer_size": 1270,
 				"line_ending": "Unix"
 			}
 		},
@@ -97,10 +94,10 @@
 			}
 		},
 		{
-			"file": "modules/routes.js",
+			"file": "models/Users.js",
 			"settings":
 			{
-				"buffer_size": 1225,
+				"buffer_size": 437,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -109,16 +106,17 @@
 			"file": "controllers/loginController.js",
 			"settings":
 			{
-				"buffer_size": 1524,
+				"buffer_size": 1725,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "notes/db.txt",
+			"file": "configs/default.json",
 			"settings":
 			{
-				"buffer_size": 1270,
+				"buffer_size": 985,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -161,17 +159,21 @@
 	[
 		"/Users/akshay/Desktop/kshatriya-bhavsar",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/models",
-		"/Users/akshay/Desktop/kshatriya-bhavsar/modules"
+		"/Users/akshay/Desktop/kshatriya-bhavsar/modules",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/notes"
 	],
 	"file_history":
 	[
+		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/index.html",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/package.json",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/index.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/modules/routes.js",
+		"/Users/akshay/Desktop/kshatriya-bhavsar/controllers/loginController.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/models/RoleMaster.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/models/index.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/configs/default.json",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/modules/helpers.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/modules/db/index.js",
-		"/Users/akshay/Desktop/kshatriya-bhavsar/index.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/app.js",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/views/all.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/views/components/sidebar.component.html",
@@ -191,7 +193,6 @@
 		"/Users/akshay/Desktop/WebContent/WebContent/index.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/fixedplugin.component.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/footer.component.html",
-		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/index.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/navbar.component.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/public/app/js/components/sidebar.component.html",
 		"/Users/akshay/Desktop/kshatriya-bhavsar/.gitignore",
@@ -235,7 +236,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -250,6 +251,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"roles",
 			"role_masters",
 			"users",
 			"_config",
@@ -291,38 +293,38 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/app/index.html",
+					"file": "models/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2855,
+						"buffer_size": 2618,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1199,
-								1199
+								2029,
+								2029
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 858.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -331,15 +333,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1060,
+						"buffer_size": 977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								480,
-								486
+								870,
+								870
 							]
 						],
 						"settings":
@@ -350,58 +352,57 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 80.0,
+						"translation.y": 23.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "index.js",
+					"file": "notes/db.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2033,
+						"buffer_size": 1270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								755,
-								755
+								87,
+								87
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 568.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "models/index.js",
+					"file": "models/RoleMaster.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1526,
+						"buffer_size": 258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								319,
-								319
+								9,
+								9
 							]
 						],
 						"settings":
@@ -420,26 +421,27 @@
 				},
 				{
 					"buffer": 4,
-					"file": "models/RoleMaster.js",
+					"file": "models/Users.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 258,
+						"buffer_size": 437,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								350,
+								350
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -450,49 +452,19 @@
 				},
 				{
 					"buffer": 5,
-					"file": "modules/routes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1225,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								614,
-								614
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "controllers/loginController.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1524,
+						"buffer_size": 1725,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1135,
-								1135
+								1264,
+								1264
 							]
 						],
 						"settings":
@@ -503,40 +475,41 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 281.0,
+						"translation.y": 333.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "notes/db.txt",
+					"buffer": 6,
+					"file": "configs/default.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1270,
+						"buffer_size": 985,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
+								716,
+								716
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 137.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
