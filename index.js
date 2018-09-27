@@ -13,15 +13,13 @@ var hostname = process.env.HOSTNAME || 'localhost',
     _config = require('./configs/default.json');
 
 // var DB = require('./modules/db')
-// var DB_CONSOLE = require('./modules/db/db-console.js')
 // Global
 _ = require('underscore')
 config = _config[process.argv[2]] || _config['development'];
-MODELS = require('./models')
+MODELS = require('./modules/db/models')
 // nse_env = process.argv[3] || "LIVE";
 app.locals.env=config;
 // db = new DB(config.db)
-// db_console = new DB_CONSOLE(config.db)
 // Global Ends
 
 /* -------- App Configs --------  */

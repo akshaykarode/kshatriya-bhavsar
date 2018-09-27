@@ -1176,27 +1176,6 @@ Database.prototype.getShortlistedSchemes = function(obj,pm_query,plm_query) {
   });
   return deferred.promise;
 };
-// Database.prototype.getAllSchemes = function(obj) {
-//   var deferred = Q.defer();
-//   var query = 
-//   'SELECT * from tp_nse_product_master T1 '+
-//   'INNER JOIN ( '+
-//   'SELECT * FROM tp_nse_product_limit_master WHERE amc_code '+
-//   'IN '+
-//   '(SELECT amc_code FROM tp_nse_empanelled_amc WHERE admin_advisor_id = '+(obj.admin_advisor_id || "")+') '+
-//   ') T2 '+
-//   'ON '+
-//   'CONCAT(T1.amc_code,T1.product_code) = CONCAT(T2.amc_code,T2.product_code)'
-
-//   console.log('* ',query)
-//   this.connection.acquire(function(err, con) {
-//     con.query(query, function(err, result) {
-//       con.release();
-//       deferred.resolve(result)
-//     });
-//   });
-//   return deferred.promise;
-// };
 Database.prototype.insertShortlistScheme = function(obj) {
   var deferred = Q.defer();
   this.connection.acquire(function(err, con) {

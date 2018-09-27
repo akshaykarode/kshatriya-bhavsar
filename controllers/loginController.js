@@ -41,8 +41,8 @@ exports.status = function(req, res ,next) {
         }
       ]
     }).then(users => {
-    console.log('users',users)
-    res.send(users)
+    console.log('users',JSON.parse(JSON.stringify(users)))
+    res.send(JSON.parse(JSON.stringify(users)))
   })
 };
 

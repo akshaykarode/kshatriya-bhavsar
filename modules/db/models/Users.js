@@ -10,11 +10,7 @@ module.exports=function(Sequelize,sequelize){
 	  email_id:Sequelize.STRING(20),
 	  role_id:{
 	  	type: Sequelize.INTEGER(11),
-	    allowNull: false,
-	    references: {
-	      model: "role_master",
-	      key: "role_id"
-	    }
+	    allowNull: false
 	  }
 	});
 	return model;
