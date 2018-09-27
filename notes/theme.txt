@@ -5,3 +5,7 @@ https://css-tricks.com/gulp-for-beginners/
 
 paper theme
 https://demos.creative-tim.com/paper-dashboard-pro-angular/components/buttons
+
+cloudinary image upload 
+https://cloudinary.com/documentation/node_image_upload#direct_uploading_environment_setup
+https://github.com/cloudinary/cloudinary_gem/blob/master/samples/photo_album/app/views/photos/new_direct.html.erb
