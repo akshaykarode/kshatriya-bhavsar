@@ -1,9 +1,6 @@
 var Helpers = require('./helpers')
 var Authentication = require('./../controllers/loginController.js')
-// var masterListController = require('./../controllers/masterListController.js')
-// var transactionController = require('./../controllers/transactionController.js')
 // var dbController = require('./../controllers/dbController.js')
-// var dbConsoleController = require('./../controllers/dbConsoleController.js')
 
 module.exports = function(app){
 	

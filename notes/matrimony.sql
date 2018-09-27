@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
--- https://www.phpmyadmin.net/
+-- version 4.5.4.1deb2ubuntu2
+-- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2018 at 08:09 PM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.2.2
+-- Generation Time: Sep 25, 2018 at 06:54 PM
+-- Server version: 5.7.20-0ubuntu0.16.04.1-log
+-- PHP Version: 7.0.22-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -32,10 +30,10 @@ CREATE TABLE `astro_details` (
   `astro_details_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `candidates_id` int(11) NOT NULL,
-  `sun_sign` varchar(20) NOT NULL,
-  `moon_sign` varchar(20) NOT NULL,
-  `nakshatra` varchar(20) NOT NULL,
-  `is_manglik` tinyint(1) NOT NULL
+  `sun_sign` varchar(20) DEFAULT NULL,
+  `moon_sign` varchar(20) DEFAULT NULL,
+  `nakshatra` varchar(20) DEFAULT NULL,
+  `is_manglik` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -47,8 +45,8 @@ CREATE TABLE `astro_details` (
 CREATE TABLE `candidates` (
   `candidates_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `is_arranged` tinyint(1) NOT NULL,
-  `arranged_with` int(11) NOT NULL
+  `is_arranged` tinyint(4) DEFAULT NULL,
+  `arranged_with` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -61,14 +59,14 @@ CREATE TABLE `contact` (
   `contact_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `candidates_id` int(11) NOT NULL,
-  `title` varchar(20) NOT NULL,
-  `address` varchar(40) NOT NULL,
-  `address_street_1` varchar(40) NOT NULL,
-  `address_street_2` varchar(40) NOT NULL,
-  `city` varchar(20) NOT NULL,
-  `state` varchar(20) NOT NULL,
-  `country` varchar(20) NOT NULL,
-  `zip` varchar(20) NOT NULL
+  `title` varchar(20) DEFAULT NULL,
+  `address` varchar(40) DEFAULT NULL,
+  `address_street_1` varchar(40) DEFAULT NULL,
+  `address_street_2` varchar(40) DEFAULT NULL,
+  `city` varchar(20) DEFAULT NULL,
+  `state` varchar(20) DEFAULT NULL,
+  `country` varchar(20) DEFAULT NULL,
+  `zip` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -92,19 +90,19 @@ CREATE TABLE `family_background` (
   `family_background_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `candidates_id` int(11) NOT NULL,
-  `religion` varchar(20) NOT NULL,
-  `community` varchar(20) NOT NULL,
-  `sub_community` varchar(40) NOT NULL,
-  `mother_tongue` varchar(20) NOT NULL,
-  `gothra` varchar(40) NOT NULL,
-  `fathers_details` varchar(100) NOT NULL,
-  `mothers_details` varchar(100) NOT NULL,
-  `family_location` varchar(20) NOT NULL,
-  `native_place` varchar(20) NOT NULL,
-  `no_of_brothers` int(2) NOT NULL,
-  `no_of_sisters` int(2) NOT NULL,
-  `family_type` varchar(20) NOT NULL,
-  `family_affluence` varchar(20) NOT NULL
+  `religion` varchar(20) DEFAULT NULL,
+  `community` varchar(20) DEFAULT NULL,
+  `sub_community` varchar(40) DEFAULT NULL,
+  `mother_tongue` varchar(20) DEFAULT NULL,
+  `gothra` varchar(40) DEFAULT NULL,
+  `fathers_details` varchar(100) DEFAULT NULL,
+  `mothers_details` varchar(100) DEFAULT NULL,
+  `family_location` varchar(20) DEFAULT NULL,
+  `native_place` varchar(20) DEFAULT NULL,
+  `no_of_brothers` int(2) DEFAULT NULL,
+  `no_of_sisters` int(2) DEFAULT NULL,
+  `family_type` varchar(20) DEFAULT NULL,
+  `family_affluence` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -116,9 +114,9 @@ CREATE TABLE `family_background` (
 CREATE TABLE `images` (
   `user_id` int(11) NOT NULL,
   `candidates_id` int(11) NOT NULL,
-  `image_url` varchar(100) NOT NULL,
-  `biodata_url` varchar(100) NOT NULL,
-  `is_display_picture` tinyint(1) NOT NULL
+  `image_url` varchar(100) DEFAULT NULL,
+  `biodata_url` varchar(100) DEFAULT NULL,
+  `is_display_picture` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -131,21 +129,21 @@ CREATE TABLE `personal_details` (
   `personal_details_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `candidates_id` int(11) NOT NULL,
-  `first_name` varchar(40) NOT NULL,
-  `middle_name` varchar(40) NOT NULL,
-  `last_name` varchar(40) NOT NULL,
-  `date_time_of_birth` datetime NOT NULL,
-  `place_of_birth` varchar(40) NOT NULL,
-  `height` double NOT NULL,
-  `weight` int(3) NOT NULL,
-  `body_type` varchar(20) NOT NULL,
-  `is_disabled` tinyint(1) NOT NULL,
-  `health_problem` varchar(20) NOT NULL,
-  `marrital_status` varchar(20) NOT NULL,
-  `about_myself` varchar(250) NOT NULL,
-  `diet` varchar(20) NOT NULL,
-  `drink` varchar(20) NOT NULL,
-  `smoke` varchar(20) NOT NULL
+  `first_name` varchar(40) DEFAULT NULL,
+  `middle_name` varchar(40) DEFAULT NULL,
+  `last_name` varchar(40) DEFAULT NULL,
+  `date_time_of_birth` datetime DEFAULT NULL,
+  `place_of_birth` varchar(40) DEFAULT NULL,
+  `height` double DEFAULT NULL,
+  `weight` int(3) DEFAULT NULL,
+  `body_type` varchar(20) DEFAULT NULL,
+  `is_disabled` tinyint(1) DEFAULT NULL,
+  `health_problem` varchar(20) DEFAULT NULL,
+  `marrital_status` varchar(20) DEFAULT NULL,
+  `about_myself` varchar(250) DEFAULT NULL,
+  `diet` varchar(20) DEFAULT NULL,
+  `drink` varchar(20) DEFAULT NULL,
+  `smoke` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -176,6 +174,14 @@ CREATE TABLE `role_master` (
   `role_name` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `role_master`
+--
+
+INSERT INTO `role_master` (`role_id`, `role_name`) VALUES
+(0, 'Admin'),
+(1, 'User');
+
 -- --------------------------------------------------------
 
 --
@@ -186,10 +192,10 @@ CREATE TABLE `social_contact_id` (
   `social_contact_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `candidates_id` int(11) NOT NULL,
-  `facebook` varchar(20) NOT NULL,
-  `instagram` varchar(20) NOT NULL,
-  `twitter` varchar(20) NOT NULL,
-  `gmail` varchar(20) NOT NULL
+  `facebook` varchar(20) DEFAULT NULL,
+  `instagram` varchar(20) DEFAULT NULL,
+  `twitter` varchar(20) DEFAULT NULL,
+  `gmail` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -293,56 +299,46 @@ ALTER TABLE `users`
 --
 ALTER TABLE `astro_details`
   MODIFY `astro_details_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `candidates`
 --
 ALTER TABLE `candidates`
   MODIFY `candidates_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
   MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `personal_details`
 --
 ALTER TABLE `personal_details`
   MODIFY `personal_details_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `professional_details`
 --
 ALTER TABLE `professional_details`
   MODIFY `professional_details_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `role_master`
 --
 ALTER TABLE `role_master`
-  MODIFY `role_id` int(2) NOT NULL AUTO_INCREMENT;
-
+  MODIFY `role_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `social_contact_id`
 --
 ALTER TABLE `social_contact_id`
   MODIFY `social_contact_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `telephone`
 --
 ALTER TABLE `telephone`
   MODIFY `telephone_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
