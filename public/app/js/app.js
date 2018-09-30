@@ -2,8 +2,15 @@
 angular.module('reshimgathi', [
 	'ngRoute', 
 	'ngResource',
-	'ui.router'
+	'ui.router',
+  'ngFileUpload',
+  'cloudinary',
 	])
+  .config(['cloudinaryProvider', function (cloudinaryProvider) {
+  cloudinaryProvider
+    .set("cloud_name", "reshimgathi")
+    .set("upload_preset", "users-preset")
+  }])
 	.config(['$stateProvider','$urlRouterProvider',function ($stateProvider, $urlRouterProvider) {
 		'use strict';
 
