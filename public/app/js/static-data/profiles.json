@@ -1,0 +1,30 @@
+[
+  {
+    "fname": "Akshay 1",
+    "lname": "KK 1",
+    "images": [
+      {
+        "url": "/users/xumfx4gkumasani6chp5.jpg",
+        "is_display_picture": true
+      },
+      {
+        "url": "/sample.jpg",
+        "is_display_picture": false
+      }
+    ]
+  },
+  {
+    "fname": "Akshay 2",
+    "lname": "KK 2",
+    "images": [
+      {
+        "url": "/users/xumfx4gkumasani6chp5.jpg",
+        "is_display_picture": false
+      },
+      {
+       	"url": "/sample.jpg",
+        "is_display_picture": true
+      }
+    ]
+  }
+]
