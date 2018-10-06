@@ -1,7 +1,7 @@
 
 <div class="sidebar-wrapper">
     <div class="logo">
-        <a ui-sref="app.all" class="simple-text">
+        <a ui-sref="app.all" ui-sref-active="active" class="simple-text">
             <!-- <div class="logo-img">
                 <img src="../../assets/img/angular2-logo.png" alt="">
             </div> -->
@@ -9,13 +9,13 @@
         </a>
     </div>
     <ul class="nav">
-      <li class="active">
+      <li ui-sref-active="active">
         <a ui-sref="app.matches"><i class="nc-icon nc-bank"></i><p>My Matches</p></a>
       </li>
-      <li>
+      <li ui-sref-active="active">
         <a ui-sref="app.profiles"><i class="nc-icon nc-bank"></i><p>My Profiles</p></a>
       </li>
-      <li>
+      <li ui-sref-active="active">
         <a ui-sref="app.shortlisted"><i class="nc-icon nc-bank"></i><p>Shortlisted</p></a>
       </li>
     </ul>

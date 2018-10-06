@@ -1,10 +1,15 @@
 angular.module('reshimgathi')
-.controller('profilesCtrl', ['$scope','$routeParams','$filter','profileService', function profilesCtrl($scope, $routeParams, $filter, profileService) {
+.controller('profilesCtrl', ['$scope','$state','$routeParams','$filter','profileService', function profilesCtrl($scope, $state, $routeParams, $filter, profileService) {
   'use strict';
   console.log("profilesCtrl")
   /* Configs */
   $scope.Profiles=[]
+
   /* Configs Ends*/
+  $scope.viewProfile=function(profile){
+    console.log("viewProfile")
+    $state.go('app.profileDetails', {profile:profile});
+  }
   $scope.init = function() {
     $scope.loading = true
     profileService.getProfiles({})
@@ -17,4 +22,9 @@ angular.module('reshimgathi')
     });
   }
   $scope.init()
+}])
+.controller('profilesDetailsCtrl', ['$scope','$stateParams', function profilesCtrl($scope, $stateParams) {
+  'use strict';
+  console.log("profilesDetailsCtrl",$stateParams)
+  $scope.profile=$stateParams.profile
 }]);

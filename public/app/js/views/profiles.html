@@ -8,8 +8,8 @@
           <p class="card-category">{{profile.lname}}</p>
         </div>
         <div class="card-body">
-          <div class="mr-auto ml-auto">
-            <img src="{{profile.dp}}" alt="">
+          <div class="mr-auto ml-auto" ng-click="viewProfile(profile)">
+            <img ng-src="{{profile.dp}}" alt="">
           </div>
         </div>
         <div class="card-footer">

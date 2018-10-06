@@ -52,6 +52,13 @@ angular.module('reshimgathi', [
       controller: 'profilesCtrl',
     })
     .state({
+      name:"app.profileDetails",
+      url:'/profile-details',
+      templateUrl: './js/views/childrens/profile-details.html',
+      controller: 'profilesDetailsCtrl',
+      params: {profile:null}
+    })
+    .state({
       name:"app.shortlisted",
       url:'/shortlisted',
       templateUrl: './js/views/shortlisted.html',
