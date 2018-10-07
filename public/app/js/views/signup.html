@@ -1,91 +1,100 @@
-<div class="main-content">
-  <div class="row">
-    <!-- <div class="col-lg-6 col-md-6 col-sm-6 ml-auto mr-auto">
-      <div>
-        <h3><b>Register</b></h3>
-        <div align="right">
-          <a href="#" ng-click="searchUser()">{{title}}</a>
-        </div>
-        <form role = "form" class="well" ng-hide="ifSearchUser">
-          <div class = "form-group">
-            <label for = "name"> First Name:  </label>
-            <input type = "text" id = "name" class = "form-control" placeholder = "Enter Name " ng-model = "newcontact.name">
-          </div>
-          <div class = "form-group">
-            <label for = "name"> Last Name:  </label>
-            <input type = "text" id = "name" class = "form-control" placeholder = "Enter Name " ng-model = "newcontact.name">
-          </div>
-
-          <div class = "form-group">
-            <label for = "email"> Username:  </label>
-            <input type = "email" id = "email" class = "form-control" placeholder = "Enter Email " ng-model = "newcontact.email">
-          </div>
-          <div class = "form-group">
-            <label for = "email"> Email:  </label>
-            <input type = "email" id = "email" class = "form-control" placeholder = "Enter Email " ng-model = "newcontact.email">
-          </div>
-          <div class = "form-group">
-            <label for = "phone"> Phone:  </label>
-            <input type = "text" id = "phone" class = "form-control" placeholder = "Enter Phone " ng-model = "newcontact.phone">
-          </div>
-          <div class = "form-group">
-            <label for = "password"> Password:  </label>
-            <input type = "password" id = "password" class = "form-control" placeholder = "Enter Password " ng-model = "newcontact.password">
-          </div>
-          <br>
-          <input type="hidden" ng-model="newcontact.id">
-          <input type="button" class="btn btn-primary" ng-click="saveContact()" class="btn btn-primary" value = "Submit">
-        </form>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+  <div class="container-fluid">
+    <div class="navbar-wrapper">
+      <!-- <div class="navbar-minimize"><button class="btn btn-icon btn-round" id="minimizeSidebar"><i class="nc-icon nc-minimal-right text-center visible-on-sidebar-mini"></i><i class="nc-icon nc-minimal-left text-center visible-on-sidebar-regular"></i></button></div>
+      <div class="navbar-toggle"><button class="navbar-toggler" data-target="#navigation" data-toggle="collapse" type="button"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button></div> -->
+      <a class="navbar-brand p-4" href="#">App</a>
+    </div>
+    <!-- <div class="navbar-collapse justify-content-end collapse" id="navigation" style="">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link btn-magnify" ui-sref="signup">
+            <i class="nc-icon nc-layout-11"></i>
+            <p><span class="d-lg-none d-md-block">Register</span></p>
+          </a>
+        </li>
+      </ul>
     </div> -->
-		<div class="col-lg-6 col-md-6 col-sm-6 ml-auto mr-auto">
-			<div class="card">
-			  <form class="form-horizontal ng-untouched ng-pristine ng-invalid" novalidate="">
-			    <div class="card-header ">
-			      <h4 class="card-title">Register</h4>
-			    </div>
-			    <div class="card-body">
-			      <fieldset>
-			        <div class="form-group">
-			          <label class="col-sm-2 control-label"> First Name: </label>
-			          <div class="col-sm-4"><input type = "text" id = "fname" class = "form-control" placeholder = "" ng-model = "newcontact.fname"><small class="text-danger" hidden=""> First Name is required. </small></div>
-			          <label class="col-sm-2 control-label"> Last Name: </label>
-			          <div class="col-sm-4"><input type = "text" id = "lname" class = "form-control" placeholder = "" ng-model = "newcontact.lname"><small class="text-danger" hidden=""> Last Name is required. </small></div>
-			        </div>
-			      </fieldset>
-			      <fieldset>
-			        <div class="form-group">
-			          <label class="col-sm-2 control-label"> Username </label>
-			          <div class="col-sm-10"><input class="form-control" name="username" required="" type="text"><small class="text-danger" hidden=""> Username is required</i>.</small></div>
-			        </div>
-			      </fieldset>
-			      <fieldset>
-			        <div class="form-group">
-			          <label class="col-sm-2 control-label"> Email </label>
-			          <div class="col-sm-10"><input class="form-control" name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" required="" type="email"><small class="text-danger" hidden=""> Email is required and format should be <i>john@doe.com</i>. </small></div>
-			        </div>
-			      </fieldset>
-			      <fieldset>
-			        <div class="form-group">
-			          <label class="col-sm-2 control-label"> Phone </label>
-			          <div class="col-sm-10"><input class="form-control ng-untouched ng-pristine ng-invalid" name="phone" number="true" required="" type="number"><small class="text-danger" hidden=""> Contact is required </small></div>
-			        </div>
-			      </fieldset>
-			      <fieldset>
-			        <div class="form-group">
-			          <label class="col-sm-2 control-label"> Password </label>
-			          <div class="col-sm-4"><input class="form-control" name="password" required="" reverse="true" type="password" validateequal="confirmPassword">
-			          <small class="text-danger" hidden=""> Password is required </small></div>
-			          <label class="col-sm-2 control-label"> Confirm Password </label>
-			          <div class="col-sm-4"><input class="form-control" name="confirmPassword" required="" reverse="false" type="password" validateequal="password">
-			          <small class="text-danger" hidden=""> Confirm Password is required</small></div>
-			        </div>
-			      </fieldset>			      
-			    </div>
-			    <div class="card-footer text-center"><button class="btn btn-info btn-fill" type="submit">Submit</button></div>
-			  </form>
-			</div>
-		</div>
-
   </div>
+</nav>
+<div class="full-page">
+	<div class="content">
+		<div class="container-fluid">
+		  <div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 ml-auto mr-auto">
+					<div class="card">
+					  <form class="form-horizontal" novalidate="" name="signupForm">
+					    <div class="card-header ">
+					      <h4 class="card-title">Register</h4>
+					    </div>
+					    <div class="card-body">
+					      <fieldset>
+					        <div class="form-group">
+					          <label class="col-sm-2 control-label"> First Name: </label>
+					          <div class="col-sm-4">
+					          	<input class="form-control" name="fname" type="text" ng-model = "fname" required>
+					          	<small class="text-danger" ng-show="signupForm.fname.$dirty && signupForm.fname.$invalid"> First Name is required</i>.</small>
+					          </div>
+					          <label class="col-sm-2 control-label"> Last Name: </label>
+					          <div class="col-sm-4">
+					          	<input class="form-control" name="lname" type="text" ng-model = "lname" required>
+					          	<small class="text-danger" ng-show="signupForm.lname.$dirty && signupForm.fname.$invalid"> Last Name is required</i>.</small>
+					          </div>
+					        </div>
+					      </fieldset>
+					      <fieldset>
+					        <div class="form-group">
+					          <label class="col-sm-2 control-label"> Username </label>
+					          <div class="col-sm-6">
+					          	<input class="form-control" name="username" type="text" ng-model = "username" required>
+					          	<small class="text-danger" ng-show="signupForm.username.$dirty && signupForm.username.$invalid"> Username is required</i>.</small>
+					          </div>
+					        </div>
+					      </fieldset>
+					      <fieldset>
+					        <div class="form-group">
+					          <label class="col-sm-2 control-label"> Email </label>
+					          <div class="col-sm-10">
+					          	<input class="form-control" name="email" ng-pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" type="email" ng-model="email" required>
+					          	<small class="text-danger" ng-show="signupForm.email.$dirty && signupForm.email.$invalid"> Email is required and format should be <i>john@doe.com</i>. </small>
+					        </div>
+					        </div>
+					      </fieldset>
+					      <fieldset>
+					        <div class="form-group">
+					          <label class="col-sm-2 control-label"> Phone </label>
+					          <div class="col-sm-6">
+					          	<input class="form-control" name="phone" ng-pattern="/^\+?\d{10}$/" number="true" type="number" ng-model = "phone" required>
+					          <small class="text-danger" ng-show="signupForm.phone.$dirty && signupForm.phone.$invalid"> Enter a valid phone number </small>
+					        </div>
+					        </div>
+					      </fieldset>
+					      <fieldset>
+					        <div class="form-group">
+					          <label class="col-sm-2 control-label"> Password </label>
+					          <div class="col-sm-4">
+					          	<input class="form-control" name="password" reverse="true" type="password" ng-model = "password" required>
+						          <small class="text-danger" ng-show="signupForm.password.$dirty && signupForm.password.$invalid"> Password is required </small>
+						          <br>
+						          <small class="text-danger" ng-show="signupForm.confirmPassword.$dirty && (signupForm.password.$modelValue !== signupForm.confirmPassword.$modelValue)"> Password is not matched </small>
+						        </div>
+					          <label class="col-sm-2 control-label"> Confirm Password </label>
+					          <div class="col-sm-4">
+					          	<input class="form-control" name="confirmPassword" reverse="false" type="password" ng-model = "confirmPassword" required>
+						          <small class="text-danger" ng-show="signupForm.confirmPassword.$dirty && signupForm.confirmPassword.$invalid"> Confirm Password is required</small>
+						        </div>
+					        </div>
+					      </fieldset>			      
+					    </div>
+					    <div class="card-footer text-center">
+					    	<button class="btn btn-info btn-fill" type="submit" 
+					    	ng-disabled="signupForm.$invalid || (signupForm.password.$modelValue !== signupForm.confirmPassword.$modelValue)">Submit</button>
+					    </div>
+					  </form>
+					</div>
+				</div>
+
+		  </div>
+		</div>
+	</div>
 </div>

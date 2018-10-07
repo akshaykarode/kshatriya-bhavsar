@@ -21,7 +21,7 @@
 	<div class="content">
 		<div class="container-fluid">
 		  <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-lg-4 col-md-4 col-sm-4">
-		    <form action="" class="form" method="" novalidate="">
+		    <form action="" class="form" novalidate="" name="signinForm">
 		      <div class="card card-login">
 		        <div class="card-header ">
 		          <div class="card-header ">
@@ -31,16 +31,17 @@
 		        <div class="card-body content">
 						  <div class="form-group">
 						  	<label class="control-label" for="">Email Address: <span class="star">*</span></label>
-						  	<input class="form-control" name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" required="" type="email"><small class="text-danger" hidden=""> Email is required and format should be <i>john@doe.com</i>. </small>
+						  	<input class="form-control" name="email" ng-model="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" required="" type="email">
+						  	<div class="category text-danger" ng-show="signinForm.email.$dirty && signinForm.email.$invalid"><span class="star">*</span> Required fields</div>
 						  </div>
 						  <div class="form-group">
 						  	<label class="control-label" for="">Password <span class="star">*</span></label>
-						  	<input class="form-control" name="password" required="" reverse="true" type="password" validateequal="confirmPassword"><small class="text-danger" hidden=""> Password is required </small>
+						  	<input class="form-control" name="password" ng-model="password" required="" reverse="true" type="password" validateequal="confirmPassword">
 						  </div>
-						  <div class="category"><span class="star">*</span> Required fields</div>
+						  <div class="category text-danger" ng-show="signinForm.password.$dirty && signinForm.password.$invalid"><span class="star">*</span> Required fields</div>
 						</div>
 						<div class="card-footer text-center content">
-							<button class="btn btn-primary" type="submit">Login</button>
+							<button class="btn btn-primary" type="submit" ng-disabled="signinForm.$invalid">Login</button>
 						</div>
 
 		      </div>
